@@ -1,0 +1,111 @@
+version: '3.1'
+
+intents:
+  - affirm
+  - ask_for_joke
+  - ask_for_time_and_date
+  - ask_how_are_you
+  - ask_whats_your_favorite_color
+  - ask_whats_your_job
+  - ask_whats_your_name
+  - ask_about_music
+  - ask_about_hobbies
+  - bot_challenge
+  - copy_or_paste_action
+  - deny
+  - enter_key
+  - entertainment
+  - give_compliment
+  - goodbye
+  - greet
+  - open_app_website
+  - pick_number
+  - save
+  - specify_app_website
+  - study
+  - take_screenshot
+  - type_this
+  - wake_up
+  - sleep_mode
+
+actions:
+  - action_open_app_website
+  - action_type_message
+  - action_remove_message
+  - action_press_enter_key
+  - action_copy_paste
+  - action_open_google
+  - action_tell_time_date
+  - action_take_screenshot
+  - action_chose_from_options
+  - action_specified_app_website
+  - action_save_to_file
+  - action_sleep_mode
+  - action_wake_up
+
+entities:
+  - program_name
+  - message_to_type
+  - last_message_length
+  - action_type
+  - chosen_number
+  - program_options
+  - program_type
+  - program_path
+  - is_asleep
+
+slots:
+    message_to_type:
+      type: text
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: message_to_type
+    last_message_length:
+      type: float
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: last_message_length
+    program_name:
+      type: text
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: program_name
+    chosen_number:
+      type: float
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: chosen_number
+    program_options:
+      type: list
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: program_options
+    program_type:
+      type: text
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: program_type
+    program_path:
+      type: text
+      influence_conversation: false
+      mappings:
+      - type: from_entity
+        entity: program_path
+    is_asleep:
+      type: bool
+      initial_value: false
+      influence_conversation: true
+      mappings:
+        - type: from_entity
+          entity: is_asleep
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
