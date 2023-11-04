@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye

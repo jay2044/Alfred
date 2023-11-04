@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Put the bot to sleep
+  steps:
+  - intent: sleep_mode
+  - action: utter_goodbye
+  - action: action_sleep_mode
+
+- rule: Wake up the bot
+  condition:
+  - slot_was_set:
+      - is_asleep: true
+  steps:
+  - intent: wake_up
+  - action: action_wake_up

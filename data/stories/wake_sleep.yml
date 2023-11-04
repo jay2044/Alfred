@@ -1,0 +1,16 @@
+version: "3.1"
+
+
+stories:
+
+- story: Put the bot to sleep
+  steps:
+  - intent: sleep_mode
+  - action: utter_goodbye
+  - action: action_sleep_mode
+
+- story: Wake up the bot
+  steps:
+  - intent: wake_up
+  - action: action_wake_up
+

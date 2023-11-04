@@ -1,0 +1,71 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - good afternoon
+    - let's go
+    - wassup
+    - howdy
+    - greetings
+    - salutations
+    - what's up
+    - hi there
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - have a nice day
+    - see you around
+    - farewell
+    - catch you later
+    - bye for now
+    - till next time
+    - later
+
+- intent: affirm
+  examples: |
+    - yes
+    - okay
+    - yup
+    - yea
+    - that sounds good
+    - correct
+    - alright
+    - that's it
+    - that is all
+    - done
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - nope
+    - that's wrong
+    - no not that
+    - incorrect
+    - what the
+    - remove
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you AI?
+    - is this an artificial intelligence?
+    - you're a machine, right?
+    - is this a robot I'm talking to?
+    - are you a robot?
+    - are you powered by artificial intelligence?

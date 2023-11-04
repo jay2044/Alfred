@@ -1,0 +1,150 @@
+version: "3.1"
+
+regex:
+  - name: program_name
+    pattern: '[a-zA-Z\s]+'
+
+
+nlu:
+
+  - intent: open_app_website
+    examples: |
+      - I want to open the [Oracle SQL Developer](program_name) tool
+      - Open the [IntelliJ IDEA Community Edition](program_name) IDE
+      - Start the [Mozilla Firefox Developer Edition](program_name) browser
+      - open [wassup](program_name)
+      - can you open [hi](program_name)
+      - launch [Kindly update the shared document](program_name)
+      - open [See you at the conference](program_name)
+      - open [The webinar starts at 3 PM](program_name)
+      - please launch [Good morning, everyone](program_name)
+      - open [Please submit the report by end of day](program_name)
+      - launch [Thank you for your cooperation](program_name)
+      - open [Quick brown fox jumps over the lazy dog](program_name)
+      - open [Pack my box with five dozen liquor jugs](program_name) app
+      - launch [How razorback jumping frogs can level six piqued gymnasts](program_name) website
+      - can you open [The five boxing wizards jump quickly](program_name)?
+      - open [Jinxed wizards pluck ivy from the big quilt](program_name) for me
+      - launch [Cwm fjord bank glyphs vext quiz](program_name) website
+      - launch [Q](program_name)
+      - open [Yes](program_name)
+      - open [Z](program_name)
+      - can you open [OK](program_name)
+      - please open [A](program_name)
+      - open [No](program_name)
+      - launch [Thanks](program_name)
+      - can you open [C](program_name)
+      - please open [Indeed](program_name)
+      - open [Sure](program_name)
+      - open [Facebook](program_name)
+      - launch [Google Chrome](program_name)
+      - can you open [Twitter](program_name)
+      - open [YouTube](program_name)
+      - launch [Microsoft Word](program_name)
+      - can you start [WhatsApp](program_name)?
+      - open [Netflix](program_name) for me
+      - launch [Steam](program_name)
+      - open [Spotify](program_name)
+      - open [Z](program_name)
+      - launch [A](program_name)
+      - open [OK](program_name)
+      - can you open [Indeed](program_name)?
+      - open [Yes](program_name)
+      - launch [No](program_name)
+      - open [Thanks](program_name)
+      - can you launch [C](program_name)?
+      - please open [Sure](program_name)
+      - can you launch [Zoom](program_name) for me?
+      - open [Amazon](program_name) website
+      - start [TikTok](program_name) app
+      - launch [Gmail](program_name) site
+      - open [GitHub](program_name) in browser
+      - open [AnyApp](program_name)
+      - can you launch the [AnyBrowser](program_name)?
+      - I want to open [AnyWebsite](program_name)
+      - launch [DifferentSoftware](program_name)
+      - open [Zee](program_name)
+      - open [Instamart](program_name)
+      - start [NewApp](program_name)
+      - can you open [RandomBrowser](program_name)?
+      - I want to open [SomeWebsite](program_name)
+      - open [AnotherProgram](program_name) for me
+      - launch [RandomSoftware](program_name)
+      - open [ExampleApp](program_name)
+      - start [SampleBrowser](program_name)
+      - can you open [TestWebsite](program_name)?
+      - open [DemoProgram](program_name)
+      - launch [TrialSoftware](program_name)
+      - open [VSCode](program_name)
+      - launch [PyCharm](program_name) app
+      - start [Jupyter Notebook](program_name)
+      - can you open [GitHub](program_name)?
+      - launch [Sublime Text](program_name) for me
+      - open [Stack Overflow](program_name) in the browser
+      - can you start [Eclipse](program_name)?
+      - open [LeetCode](program_name) site
+      - launch [IntelliJ IDEA](program_name)
+      - can you open the [Git Bash](program_name) terminal?
+      - I want to open [Kaggle](program_name)
+      - open [TensorBoard](program_name) for me
+      - launch [Linux Terminal](program_name)
+      - open [Postman](program_name)
+      - can you launch [MySQL Workbench](program_name)?
+      - I want to open [Hackerrank](program_name) website
+      - open [Docker](program_name) for me
+      - launch [Unity](program_name)
+      - open [Android Studio](program_name) app
+      - start [Firebase Console](program_name) application
+      - open [RStudio](program_name)
+      - launch [Figma](program_name) for designing
+      - start [Blender](program_name) for 3D modeling
+      - can you open [CodePen](program_name) in the browser?
+      - open [Jira](program_name) for project management
+      - launch [Slack](program_name) for team communication
+      - open [Trello](program_name) for task tracking
+      - can you start [Wireshark](program_name) for network analysis?
+      - open [Moodle](program_name) for my online classes
+      - launch [AutoCAD](program_name) for drafting
+      - can you open [Arduino IDE](program_name)?
+      - open [VMware](program_name) for virtual machines
+      - launch [Tableau](program_name) for data visualization
+      - can you open [Coursera](program_name) for online learning?
+      - open [MathWorks MATLAB](program_name) for mathematical computation
+      - start [Salesforce](program_name) for CRM
+      - launch [Adobe Photoshop](program_name) for image editing
+      - open [Udemy](program_name) for online courses
+      - launch [AWS Console](program_name) for cloud computing
+      - can you open [SketchUp](program_name) for 3D design?
+      - open [Cybersecurity Labs](program_name) for practice
+      - launch [Unreal Engine](program_name) for game development
+      - start [edX](program_name) for online education
+      - open [zekka](program_name)
+      - open [chess](program_name)
+
+  - intent: pick_number
+    examples: |
+      - [one](chosen_number)
+      - [two](chosen_number)
+      - [three](chosen_number)
+      - [1](chosen_number)
+      - [2](chosen_number)
+      - [3](chosen_number)
+
+  - intent: specify_app_website
+    examples: |
+      - [app](program_type)
+      - [website](program_type)
+      - It's an [app](program_type)
+      - It's a [website](program_type)
+      - I need the [website](program_type)
+      - The [app](program_type) is what I want
+      - [application](program_type:app)
+
+  - intent: save
+    examples: |
+      - Save it
+      - yes, save
+      - sure, save it
+      - save that
+      - go ahead and save
+      - save please

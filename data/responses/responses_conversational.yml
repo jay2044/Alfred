@@ -1,0 +1,71 @@
+version: "3.1"
+
+responses:
+  utter_greet:
+    - text: "Good day sir! How may I assist you today?"
+    - text: "Greetings sir! How can I be of service to you today?"
+    - text: "Welcome sir! What can I do for you on this fine day?"
+    - text: "Hello sir! How might I aid you today?"
+    - text: "Pleasure to see you, sir! What may I assist with today?"
+    - text: "Salutations sir! What service may I provide for you today?"
+    - text: "How can I be at your service today, sir?"
+    - text: "Sir, what can your butler do for you today?"
+
+  utter_goodbye:
+    - text: "Thank you!"
+    - text: "Goodbye!"
+    - text: "Alright sir!"
+    - text: "Yes sir!"
+    - text: "Very well, sir!"
+    - text: "Good day, sir!"
+    - text: "Until your next request, sir!"
+    - text: "Always at your service, sir!"
+
+  utter_affirm:
+    - text: "Sure thing, sir!"
+    - text: "Certainly, sir!"
+    - text: "Yes."
+    - text: "As you wish, sir!"
+    - text: "Right away, sir!"
+    - text: "Indeed."
+    - text: "Sure."
+    - text: "Of course."
+    - text: "Affirmative."
+    - text: "Alright."
+    - text: "Very well."
+    - text: "Got it."
+    - text: "Absolutely."
+    - text: "Roger."
+
+  utter_apologize:
+    - text: "I'm sorry."
+    - text: "Apologies."
+    - text: "Sorry."
+    - text: "Sorry about that, sir."
+    - text: "My apologies."
+    - text: "My mistake."
+    - text: "I regret the inconvenience."
+    - text: "Regrettably."
+
+  utter_iamabot:
+    - text: "I'm your personal butler."
+    - text: "As your butler, I'm here to assist."
+    - text: "At your service as your personal butler."
+    - text: "Indeed, sir. I am your dedicated butler bot."
+    - text: "I am your digital butler, ready to assist."
+    - text: "Just a bot butler at your service, sir."
+    - text: "Sir, I'm your butler bot, here to help."
+
+  utter_open_study_profile:
+    - text: "Opening Google in study profile."
+    - text: "Switching to your study profile on Google, sir."
+    - text: "Initiating the Google study profile, sir."
+    - text: "Accessing your Google study profile now, sir."
+    - text: "Transferring to the study profile on Google, sir."
+
+  utter_open_entertainment_profile:
+    - text: "Opening Google in entertainment profile."
+    - text: "Switching to your leisure profile on Google, sir."
+    - text: "Initiating the Google entertainment profile, sir."
+    - text: "Accessing your Google recreation profile now, sir."
+    - text: "Transferring to the entertainment profile on Google, sir."

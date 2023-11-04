@@ -1,0 +1,82 @@
+version: "3.1"
+
+stories:
+
+- story: user wants to type input and affirm
+  steps:
+    - intent: type_this
+    - action: action_type_message
+    - intent: enter_key
+    - action: utter_affirm
+    - action: action_press_enter_key
+
+- story: user wants bot to type a message but wrong input
+  steps:
+    - intent: type_this
+    - action: action_type_message
+    - intent: deny
+    - action: utter_affirm
+    - action: action_remove_message
+
+- story: user wants to copy or paste a message
+  steps:
+    - intent: copy_or_paste_action
+    - action: action_copy_paste
+
+- story: Ask for Time and Date
+  steps:
+    - intent: ask_for_time_and_date
+    - action: action_tell_time_date
+
+- story: Take a screenshot
+  steps:
+    - intent: take_screenshot
+    - action: action_take_screenshot
+
+- story: User wants to open Google in study profile
+  steps:
+  - intent: study
+  - action: action_open_google
+
+- story: User wants to open Google in entertainment profile
+  steps:
+  - intent: entertainment
+  - action: action_open_google
+
+- story: Open an App or website and choose from list
+  steps:
+    - intent: open_app_website
+    - action: action_open_app_website
+    - intent: pick_number
+    - action: action_chose_from_options
+    - action: action_specified_app_website
+
+- story: Open a website but not able to find it
+  steps:
+    - intent: open_app_website
+    - action: action_open_app_website
+    - intent: specify_app_website
+    - action: action_specified_app_website
+    - intent: save
+    - action: action_save_to_file
+
+- story: Open an App but not able to find it
+  steps:
+    - intent: open_app_website
+    - action: action_open_app_website
+    - intent: specify_app_website
+    - action: action_specified_app_website
+    - intent: save
+    - action: action_save_to_file
+
+- story: Open an App but not able to find it
+  steps:
+    - intent: open_app_website
+    - action: action_open_app_website
+    - intent: specify_app_website
+    - action: action_specified_app_website
+    - intent: pick_number
+    - action: action_chose_from_options
+    - action: action_specified_app_website
+    - intent: save
+    - action: action_save_to_file

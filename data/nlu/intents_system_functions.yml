@@ -1,0 +1,100 @@
+version: "3.1"
+
+nlu:
+  - intent: wake_up
+    examples: |
+      - Wake up
+      - Hey, wake up
+      - I want to wake you up
+      - Time to wake up
+      - Please wake up
+
+  - intent: sleep_mode
+    examples: |
+      - Go to sleep
+      - Time for you to sleep
+      - I want you to sleep
+      - Sleep now
+      - You can sleep
+
+  - intent: type_this
+    examples: |
+      - type [wassup](message_to_type)
+      - can you type [hi](message_to_type)
+      - write [Kindly update the shared document](message_to_type)
+      - type [See you at the conference](message_to_type)
+      - type [The webinar starts at 3 PM](message_to_type)
+      - please type [Good morning, everyone](message_to_type)
+      - type [Please submit the report by end of day](message_to_type)
+      - write [Thank you for your cooperation](message_to_type)
+      - write [Q](message_to_type)
+      - type [Yes](message_to_type)
+      - type [Z](message_to_type)
+      - can you type [OK](message_to_type)
+      - please type [A](message_to_type)
+      - type [No](message_to_type)
+      - write [Thanks](message_to_type)
+      - can you type [C](message_to_type)
+      - please type [Indeed](message_to_type)
+      - type [Sure](message_to_type)
+
+  - intent: copy_or_paste_action
+    examples: |
+      - copy
+      - copy it
+      - paste
+      - paste here
+      - paste it
+      - now copy
+      - copy highlighted
+
+  - intent: enter_key
+    examples: |
+      - enter
+      - return
+      - press enter
+      - hit enter
+
+  - intent: study
+    examples: |
+      - study
+      - work
+      - homework
+      - lets work
+      - academic
+
+  - intent: entertainment
+    examples: |
+      - entertainment
+      - leisure
+      - weekend
+      - recreation
+      - fun
+
+  - intent: ask_for_time_and_date
+    examples: |
+      - What's the time now?
+      - Can you tell me the date?
+      - What time is it?
+      - Can you tell me the current time and date?
+      - What's today's date?
+      - What's the date and time right now?
+      - Could you provide the time?
+      - What date is it today?
+      - Please tell me the time
+      - I need to know the date
+
+  - intent: take_screenshot
+    examples: |
+      - Can you take a screenshot?
+      - Capture the screen
+      - Take a screenshot please
+      - I need a screenshot
+      - Could you screenshot this?
+      - Screenshot the current page
+      - Grab a screenshot of this
+      - Please take a screenshot
+      - Screenshot this for me
+      - Capture a screenshot of this window
+
+  
