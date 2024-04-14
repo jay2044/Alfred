@@ -40,10 +40,8 @@ Alfred is an AI assistant developed using Python, Rasa, Vosk, pyttsx3, and PyQt5
 
 ## Usage
 
-1. Ensure all dependencies are installed.
-2. Run the application.
-3. Interact with Alfred using voice or text commands.
-
+1. Sry WIP
+   
 ## Contributors
 
 - me
