@@ -21,8 +21,8 @@ Alfred is an AI assistant developed using Python, Rasa, Vosk, pyttsx3, and PyQt5
 
 ## Sleep/Wake Policy Implementation
 
-- **Inheritance**: Inherits from Rasa's Policy class.
-- **Decorator**: Registered using @DefaultV1Recipe.register.
+- Inherits from Rasa's Policy class.
+- Registered using @DefaultV1Recipe.register.
 - **Methods**: Handles action prediction, customization, training logic, and persistence.
 - **Type Annotations**: Utilizes typing module for specifying types.
 - **Conditional Logic**: Determines action based on tracker state.
