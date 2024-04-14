@@ -1,5 +1,3 @@
----
-
 # Alfred - Advanced Virtual Assistant
 
 "Alfred" is an advanced virtual assistant built using Python and integrates technologies such as Rasa, Vosk, pyttsx3, and PyQt5. Designed to enhance workflow efficiency and streamline user interactions through voice and command, Alfred offers a suite of features to handle daily digital tasks efficiently.
@@ -41,5 +39,3 @@ Alfred is built with a scalable architecture, supporting integration with advanc
 ## Closing
 
 Alfred is designed to be a robust, user-friendly assistant that adapts to the user's needs, improving over time with each interaction. Perfect for individuals looking for an efficient way to manage digital tasks through voice interaction.
-
----
